@@ -1,0 +1,194 @@
+/* comprendre le fonctionnement : pour pouvoir atribuer un style a ça page html,
+nous devont cibler des "élément",
+pour ça : ciblage des balise h1 h1 {
+    tout les titre seront d'office en italic
+ font-style: italic;
+}
+
+ciblage des balise h1 de class "taille"
+
+h1.taille {
+    tout les h1 de class "taille" auront une taille de 200px (pixels) font-size: 200px;
+}
+
+mais est-ce que de ce fait les h1 de class "taille" seront aussi en italique ? OUI,
+car nous avons ciblez ci dessus TOUS les h1 donc TOUS les h1 sont d'office en italic, le h1.taille, n' influence que (dans cette exemple) la taille,
+mais n'annulle pas les atributs donnés par le h1
+
+mais donc comment faire pour dire tout les h1 sont en italique SAUF les h1 de class "taille"
+c'est simple, on cible les h1 de class "taille" et on le remet en normal
+
+
+h1.taille {
+
+    le mettre en normale comprendre le fonctionnement : pour pouvoir atribuer un style a ça page html,
+    nous devont cibler des "élément",
+    pour ça : ciblage des balise h1 h1 {
+        tout les titre seront d'office en italic
+ font-style: italic;
+    }
+
+    ciblage des balise h1 de class "taille"
+
+    h1.taille {
+        tout les h1 de class "taille" auront une taille de 200px (pixels) font-size: 200px;
+    }
+
+    mais est-ce que de ce fait les h1 de class "taille" seront aussi en italique ? OUI,
+    car nous avons ciblez ci dessus TOUS les h1 donc TOUS les h1 sont d'office en italic, le h1.taille, n' influence que (dans cette exemple) la taille,
+    mais n'annulle pas les atributs donnés par le h1
+
+    mais donc comment faire pour dire tout les h1 sont en italique SAUF les h1 de class "taille"
+    c'est simple, on cible les h1 de class "taille" et on le remet en normal
+
+
+    h1.taille {
+        le mettre en normale font-style: normal;
+    }
+
+    on vient mettre un fond rouge sur les div de class "red",
+    donc on cible les dev de class "red"
+
+    div.red {
+        puis on lui met un "background-color : red;" permettant de modifier sa couleur de fond en rouge background-color: red;
+    } */
+
+    body {
+        background-color: black;
+    }
+
+    * {
+        color: white;
+        list-style-type: none;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    *.red {
+        color: red;
+    }
+
+    nav ul li a.search img.search {
+        width: 4%;
+        position: absolute;
+        float: right;
+        left: 94%;
+        top: 0.5%;
+    }
+
+    nav ul *.cd {
+        position: absolute;
+        left: 70%;
+        top: -0.5%;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    *.center {
+        position: absolute;
+        left: 40%;
+        top: 0%;
+        font-weight: bold;
+    }
+
+    #mySearch {
+        width: 97%;
+        font-size: 25px;
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
+
+    #myMenu li {
+        list-style-type: none;
+        text-decoration: none;
+        padding: 1%;
+    }
+
+    #myMenu li a {
+        list-style-type: none;
+        text-decoration: none;
+        padding: 1%;
+    }
+
+    #myMenu li:hover {
+        list-style: none;
+        text-decoration: none;
+        background-color: #686868;
+    }
+
+    *.btn {
+        width: 15%;
+        height: 10%;
+        text-align: center;
+    }
+
+    *.btn:hover {
+        width: 25%;
+        height: 20%;
+        text-align: center;
+    }
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+        left: 70%;
+        top: 6%;
+        background-color: #686868;
+        padding: 0%;
+    }
+
+    li:hover .sub-menu  {
+        display: block;
+    }
+
+    .sub-menu a {
+        display: block;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .sub-menu a:hover {
+        background-color: #574864;
+    }
+
+    a.cb {
+        display: none;
+    }
+
+    nav ul li h1.dib {
+        display: none;
+    }
+
+    @media screen and (max-width:1000px) {
+        a.cd {
+            display: none;
+        }
+        
+        nav ul li a.cb {
+            display: block;
+            margin-left: 5%;
+        }
+        .sub-menu a {
+            display: none;
+        }
+
+        nav ul li.dib1 h1.dib {
+            display: block;
+        }
+
+        nav ul li.dib1 {
+            margin-left: 30%;
+        }
+    
+
+        nav ul h1.center {
+            display: none;
+        }
+    }
