@@ -18,10 +18,8 @@
     </label>
     <label class="logo"></label>
     <ul>
-      <li><a class="active" href="index.php">Accueil</a></li>
-      <li><a href="cantine.php">S'inscrire Cantine</a></li>
-      <li><a href="form.php">Rejoindre le Personnel</a></li>
-      <li><a href="http://emilezolarp.hopto.org/" target="_BLANK_">Accéder à Pronote</a></li>
+      <li><a class="active" href="pagetest.html">Accueil</a></li>
+      <li><a href="#">Collection</a></li>
     </ul>
   </nav>
   <br>
